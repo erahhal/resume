@@ -1,0 +1,16 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+    version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xml:space="preserve"
+    viewBox="0 0 8500 11000"
+    >
+    <path class="semicircle" d="M 200 12800 A 1 1 0 0 0 4400 -7300" stroke="#eee" stroke-width="1330" fill="white" />
+    <path class="semicircle" d="M 600 10500 A 1 1 0 0 0 4000 -5000" stroke="#eee" stroke-width="3300" fill="white" />
+    <path class="semicircle" d="M 5660 7000 A 1 1 0 0 0 -1080 -1500" stroke="#eee" stroke-width="1700" fill="white" />
+    <path class="semicircle" d="M 2310 6790 A 1 1 0 0 0 2310 -1290" stroke="#eee" stroke-width="1000" fill="white" />
+    <path class="semicircle" d="M 3230 5860 A 3245 3245 0 0 0 5560 2800" stroke="#eee" stroke-width="550" fill="white" />
+    <path class="semicircle" d="M 4380 4660 A 2800 2800 0 0 0 4920 1700" stroke="#eee" stroke-width="270" fill="white" />
+    <path class="semicircle" d="M 4730 3700 A 2600 2600 0 0 0 4350 1150" stroke="#eee" stroke-width="120" fill="white" />
+</svg>
