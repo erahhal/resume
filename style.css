@@ -1,5 +1,15 @@
 @import "fonts/Lato/stylesheet.css";
 
+@media screen, print {
+    body {
+        --font-size-title: 26pt;
+        --font-size-heading: 18pt;
+        --font-size-subheading: 14pt;
+        --font-size-text: 12pt;
+        --font-size-number: 12pt;
+    }
+}
+
 html,
 body {
     box-sizing: border-box;
@@ -9,16 +19,7 @@ body {
     padding: 0;
     color: #000;
     background-color: #aaa;
-}
-
-@media screen, print {
-    body {
-        --font-size-title: 32pt;
-        --font-size-heading: 22pt;
-        --font-size-subheading: 16pt;
-        --font-size-text: 12pt;
-        --font-size-number: 12pt;
-    }
+    font-size: var(--font-size-text);
 }
 
 #page-container {
@@ -117,7 +118,24 @@ address .phone {
     content: "Objective";
 }
 
-.experience::before {
+.skills::before {
+    content: "Skills";
+}
+
+.skills td {
+    padding-bottom: 5px;
+}
+
+.skills td {
+    vertical-align: top;
+}
+
+.skills tr td:first-of-type {
+    white-space: nowrap;
+    padding-right: 20px;
+}
+
+div.page:first-of-type .experience::before {
     content: "Experience";
 }
 
@@ -134,23 +152,26 @@ address .phone {
     grid-template-columns: min-content;
     grid-auto-rows: auto;
     grid-template-areas:
-        "company location time-range"
+        "heading heading heading"
         "company-desc company-desc company-desc"
         "positions positions positions";
     margin: 20px 0 0 0;
     padding: 0;
 }
 
-.experience .company,
-.experience .location,
-.experience .time-range {
-    border-top: 1px solid #444;
-    border-bottom: 1px solid #444;
+.experience .heading {
+    grid-area: heading;
+    display: flex;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
     margin-bottom: 5px;
 }
 
+.experience .heading .time-range {
+    margin-left: auto;
+}
+
 .experience .company {
-    grid-area: company;
     font-size: var(--font-size-subheading);
     padding: 3px 0 3px 0;
 }
@@ -162,7 +183,6 @@ address .phone {
 }
 
 .experience .location {
-    grid-area: location;
     font-size: var(--font-size-subheading);
     white-space: nowrap;
     padding-right: 0.3em;
@@ -170,7 +190,6 @@ address .phone {
 }
 
 .experience .time-range {
-    grid-area: time-range;
     font-size: var(--font-size-subheading);
     text-align: right;
     padding: 3px 0 3px 3px;
@@ -196,6 +215,10 @@ address .phone {
 
 .experience .details li {
     list-style-type: disc;
+}
+
+.education::before {
+    content: "Education";
 }
 
 @page {
