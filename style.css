@@ -2,11 +2,11 @@
 
 @media screen, print {
     body {
-        --font-size-title: 26pt;
-        --font-size-heading: 18pt;
-        --font-size-subheading: 14pt;
-        --font-size-text: 12pt;
-        --font-size-number: 12pt;
+        --font-size-title: 24pt;
+        --font-size-heading: 16pt;
+        --font-size-subheading: 12pt;
+        --font-size-text: 10pt;
+        --font-size-number: 10pt;
     }
 }
 
