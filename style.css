@@ -159,6 +159,10 @@ div.page:first-of-type .experience::before {
     padding: 0;
 }
 
+.experience > ul > li.heading-only {
+    margin-top: 10px;
+}
+
 .experience .heading {
     grid-area: heading;
     display: flex;
